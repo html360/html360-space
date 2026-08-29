@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug api",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--enable-source-maps"],
+      "program": "${workspaceFolder}/dist/api/server.js",
+      "preLaunchTask": "npm run build:api",
+      "restart": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}
